@@ -3,29 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant IA UniCA</title>
+    <title>Assistant UniCA</title>
     <style>
-        body { 
-            background: #003576; color: white; font-family: sans-serif;
-            display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;
-        }
-        .box {
-            text-align: center; border: 2px solid rgba(255,255,255,0.3);
-            padding: 40px; border-radius: 20px; background: rgba(255,255,255,0.1);
-        }
-        .btn {
-            display: inline-block; background: white; color: #003576;
-            padding: 15px 30px; border-radius: 50px; text-decoration: none;
-            font-weight: bold; margin-top: 20px; font-size: 1.2rem;
-        }
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #003576; }
+        iframe { border: none; width: 100%; height: 100%; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Assistant Étudiant UniCA</h1>
-        <p>Cliquez sur le bouton pour ouvrir l'interface de discussion sécurisée.</p>
-        
-        <a href="https://frieda-isthmian-darci.ngrok-free.dev" class="btn">Ouvrir le Chat</a>
-    </div>
+    <iframe 
+        src="https://frieda-isthmian-darci.ngrok-free.dev/embed/44704d92-15e8-456c-8af3-86aed19346aa" 
+        allow="clipboard-write">
+    </iframe>
 </body>
 </html>
