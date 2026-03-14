@@ -3,121 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant IA UniCA</title>
+    <title>Assistant UniCA</title>
     <style>
-        /* Styles de la page */
-        html, body { 
-            height: 100%; 
-            margin: 0; 
-            padding: 0;
-            overflow: hidden; 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
         body { 
-            background: linear-gradient(135deg, #003576 0%, #005bb7 100%); 
-            color: white; 
+            background: #003576; 
+            margin: 0; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            text-align: center;
+            height: 100vh; 
+            color: white; 
+            font-family: sans-serif; 
         }
-
-        .container { 
-            padding: 20px; 
-            max-width: 600px;
-        }
-
-        h1 { 
-            font-size: 2.5rem; 
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .highlight {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
-        /* --- RÉPARATION DE LA BULLE MOCHE --- */
-        
-        /* Force le bouton de la bulle à être rond et bleu */
+        /* Ce style cache les éventuelles bulles fantômes et n'en garde qu'une */
         #anythingllm-chat-widget-button {
             background-color: #003576 !important;
-            border: 2px solid white !important;
             border-radius: 50% !important;
-            width: 60px !important;
-            height: 60px !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important;
-            cursor: pointer !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-        }
-
-        /* Si le bouton contient du texte moche, on le cache et on met une icône de chat */
-        #anythingllm-chat-widget-button::before {
-            content: '💬' !important;
-            font-size: 30px !important;
-            color: white !important;
-        }
-
-        /* On cache le texte "Chat" qui s'affiche parfois dans le bouton */
-        #anythingllm-chat-widget-button span {
-            display: none !important;
-        }
-
-        /* Positionnement de secours */
-        #anythingllm-chat-widget-container {
-            z-index: 999999 !important;
-            bottom: 20px !important;
-            right: 20px !important;
+            border: 2px solid white !important;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div>
         <h1>Assistant IA UniCA</h1>
-        <div class="highlight">Interface Étudiant Démo</div>
-        <p>Posez vos questions sur la vie étudiante, les inscriptions ou les examens.</p>
-        <p>⬇️ Cliquez sur la bulle en bas à droite pour commencer.</p>
+        <p>Prêt pour la démonstration.</p>
     </div>
 
     <script 
         type="text/javascript"
         data-embed-id="44704d92-15e8-456c-8af3-86aed19346aa"
         data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
-        src="widget.js"
-        data-position="bottom-right" 
-        data-window-height="600px" 
-        data-window-width="400px"
-        data-text-size="16"
-        data-user-bg-color="#003576" 
-        data-assistant-name="Assistant UniCA"
-        data-greeting="Bonjour ! Je suis l'IA de l'UniCA. Comment puis-je vous aider ?"
-        data-button-color="#003576">
+        src="widget.js">
     </script>
 
 </body>
-</html>        <p>⬇️ Cliquez sur la bulle en bas à droite pour commencer.</p>
-    </div>
-
- <script 
-    type="text/javascript"
-    data-embed-id="44704d92-15e8-456c-8af3-86aed19346aa"
-    data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
-    src="widget.js"
-    data-position="bottom-right" 
-    data-window-height="600px" 
-    data-window-width="400px">
-</script>
-
-</body>
 </html>
-
-
