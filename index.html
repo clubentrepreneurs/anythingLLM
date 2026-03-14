@@ -3,46 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assistant IA UniCA</title>
+    <title>Assistant UniCA - Chat</title>
     <style>
-        body { 
-            background: linear-gradient(135deg, #003576 0%, #005bb7 100%); 
-            color: white; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center;
+        body, html {
+            margin: 0; padding: 0; height: 100%; width: 100%;
+            overflow: hidden; /* Empêche le scroll de la page principale */
+            background-color: #003576;
         }
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 50px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-            max-width: 500px;
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
         }
-        h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
-        .btn {
-            display: inline-block;
-            padding: 15px 40px;
-            background: #ffffff;
-            color: #003576;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Assistant UniCA</h1>
-        <p>Bienvenue sur l'interface de démonstration de votre assistant intelligent dédié à la vie étudiante.</p>
-        
-        <a href="https://frieda-isthmian-darci.ngrok-free.dev" class="btn">Lancer la discussion</a>
-    </div>
+
+    <iframe 
+        src="https://frieda-isthmian-darci.ngrok-free.dev/e/44704d92-15e8-456c-8af3-86aed19346aa" 
+        allow="clipboard-write">
+    </iframe>
+
 </body>
 </html>
