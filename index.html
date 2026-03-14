@@ -5,54 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistant Étudiant - UniCA</title>
     <style>
-        /* Empêche les barres de défilement inutiles et fixe la hauteur */
-        html, body { 
-            height: 100%; 
-            margin: 0; 
-            padding: 0;
-            overflow: hidden; 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-
         body { 
-            background: linear-gradient(135deg, #003576 0%, #005bb7 100%); /* Dégradé bleu UniCA */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #003576; /* Bleu UniCA */
             color: white; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            text-align: center;
+            height: 100vh; 
+            margin: 0;
         }
-
-        .container { 
-            padding: 20px; 
-            max-width: 600px;
-        }
-
-        h1 { 
-            font-size: 2.5rem; 
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        p { 
-            font-size: 1.2rem; 
-            opacity: 0.9; 
-            line-height: 1.6;
-        }
-
-        .highlight {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
+        .container { text-align: center; padding: 20px; }
+        h1 { font-size: 2.5rem; }
+        p { font-size: 1.2rem; opacity: 0.9; }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Assistant IA UniCA</h1>
-        <p class="highlight">Interface Étudiant Démo</p>
         <p>Posez vos questions sur la vie étudiante, les inscriptions ou les examens.</p>
         <p>⬇️ Cliquez sur la bulle en bas à droite pour commencer.</p>
     </div>
@@ -60,14 +30,7 @@
     <script 
         data-embed-id="44704d92-15e8-456c-8af3-86aed19346aa"
         data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
-        src="https://frieda-isthmian-darci.ngrok-free.dev/embed/anythingllm-chat-widget.min.js"
-        data-position="bottom-right" 
-        data-window-height="600px" 
-        data-window-width="400px"
-        data-text-size="16"
-        data-user-bg-color="#003576"
-        data-assistant-name="Assistant UniCA">
+        src="https://frieda-isthmian-darci.ngrok-free.dev/embed/anythingllm-chat-widget.min.js">
     </script>
-
 </body>
 </html>
