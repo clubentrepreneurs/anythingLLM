@@ -5,36 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistant UniCA</title>
     <style>
-        body { 
-            background: #003576; 
-            margin: 0; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            color: white; 
-            font-family: sans-serif; 
-        }
-        /* Ce style cache les éventuelles bulles fantômes et n'en garde qu'une */
-        #anythingllm-chat-widget-button {
-            background-color: #003576 !important;
-            border-radius: 50% !important;
-            border: 2px solid white !important;
-        }
+        body { background: #003576; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; margin: 0; }
+        .card { text-align: center; border: 1px solid rgba(255,255,255,0.2); padding: 30px; border-radius: 15px; background: rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
 
-    <div>
+    <div class="card">
         <h1>Assistant IA UniCA</h1>
-        <p>Prêt pour la démonstration.</p>
+        <p>Interface de test opérationnelle.</p>
+        <p>Utilisez la bulle ci-dessous pour poser vos questions.</p>
     </div>
 
     <script 
         type="text/javascript"
         data-embed-id="44704d92-15e8-456c-8af3-86aed19346aa"
         data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
-        src="widget.js">
+        src="https://frieda-isthmian-darci.ngrok-free.dev/embed/anythingllm-chat-widget.min.js?v=1">
     </script>
 
 </body>
