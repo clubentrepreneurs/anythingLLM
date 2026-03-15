@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chat UniCA</title>
+    <title>c UniCA</title>
     <style>
         body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #003576; }
         #chat-container { width: 100%; height: 100%; border: none; }
@@ -12,23 +12,10 @@
 <body>
     <div id="chat-container"></div>
 
-    <script>
-        // On définit l'URL de ton chatbot
-        const chatUrl = "https://frieda-isthmian-darci.ngrok-free.dev/embed/44704d92-15e8-456c-8af3-86aed19346aa";
-
-        // On crée l'iframe dynamiquement
-        const iframe = document.createElement('iframe');
-        iframe.src = chatUrl;
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none";
-        iframe.setAttribute("allow", "clipboard-write");
-        
-        // C'est ICI que la magie opère pour enlever l'erreur Ngrok
-        // Note : Sur la version gratuite, le header doit parfois être envoyé via le navigateur.
-        // Si le script automatique échoue, il y a une solution manuelle très simple (voir plus bas).
-        
-        document.getElementById('chat-container').appendChild(iframe);
-    </script>
+    <script
+  data-embed-id="b3808c01-a6fb-4e48-ad7d-b471a934eb86"
+  data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
+  src="https://frieda-isthmian-darci.ngrok-free.dev/embed/anythingllm-chat-widget.min.js">
+</script>
 </body>
 </html>
