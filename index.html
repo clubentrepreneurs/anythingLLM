@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistant UniCA</title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #003576; }
-        /* Cette fenêtre va afficher ton chat en plein écran sur la page */
-        iframe { border: none; width: 100%; height: 100%; }
-    </style>
 </head>
 <body>
-    <iframe 
-        src="https://frieda-isthmian-darci.ngrok-free.dev/embed/44704d92-15e8-456c-8af3-86aed19346aa" 
-        allow="clipboard-write">
-    </iframe>
+    <div id="anything-llm-embed-chat"></div>
+
+    <script>
+      // On contourne l'erreur "nosniff" en chargeant le script manuellement
+      (function() {
+        var script = document.createElement('script');
+        // On utilise l'URL Ngrok pour le fichier JS
+        script.src = "https://frieda-isthmian-darci.ngrok-free.dev/embed/anythingllm-chat-widget.min.js";
+        script.async = true;
+        
+        // On force les paramètres du widget
+        script.onload = function() {
+          window.anythingLLMChatWidgetConfig = {
+            embedId: 'b3808c01-a6fb-4e48-ad7d-b471a934eb86',
+            baseApiUrl: 'https://frieda-isthmian-darci.ngrok-free.dev/api/embed'
+          };
+        };
+
+        document.body.appendChild(script);
+      })();
+    </script>
 </body>
 </html>
