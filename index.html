@@ -6,24 +6,19 @@
 <body>
     <div id="anything-llm-embed-chat"></div>
 
-    <script>
-      // On contourne l'erreur "nosniff" en chargeant le script manuellement
-      (function() {
-        var script = document.createElement('script');
-        // On utilise l'URL Ngrok pour le fichier JS
-        script.src = "https://frieda-isthmian-darci.ngrok-free.dev/embed/anythingllm-chat-widget.min.js";
-        script.async = true;
-        
-        // On force les paramètres du widget
-        script.onload = function() {
-          window.anythingLLMChatWidgetConfig = {
-            embedId: 'b3808c01-a6fb-4e48-ad7d-b471a934eb86',
-            baseApiUrl: 'https://frieda-isthmian-darci.ngrok-free.dev/api/embed'
-          };
-        };
-
-        document.body.appendChild(script);
-      })();
+<script 
+        data-embed-id="44704d92-15e8-456c-8af3-86aed19346aa"
+        data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
+        src="anythingllm-chat-widget.min.js"
+        data-position="bottom-right" 
+        data-window-height="600px" 
+        data-window-width="400px"
+        data-text-size="16"
+        data-user-bg-color="#003576"
+        data-assistant-name="Assistant UniCA">
     </script>
+
+
+    
 </body>
 </html>
