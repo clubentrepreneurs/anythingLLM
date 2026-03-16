@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Assistant UniCA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assit Étudiant - UniCA</title>
+    <style>
+        html, body { 
+            height: 100%; 
+            margin: 0; 
+            padding: 0;
+            overflow: hidden; 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body { 
+            background: linear-gradient(135deg, #003576 0%, #005bb7 100%);
+            color: white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+        }
+        .container { padding: 20px; max-width: 600px; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        p { font-size: 1.2rem; opacity: 0.9; line-height: 1.6; }
+        .highlight {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
 </head>
 <body>
-    <div id="anything-llm-embed-chat"></div>
 
-<script 
+    <div class="container">
+        <h1>Assistant IA UniCA</h1>
+        <p class="highlight">Interface Étudiant Démo</p>
+        <p>Posez vos questions sur la vie étudiante, les inscriptions ou les examens.</p>
+        <p>⬇️ Cliquez sur la bulle en bas à droite pour commencer.</p>
+    </div>
+
+    <script 
+        src="anythingllm-chat-widget.min.js"
         data-embed-id="44704d92-15e8-456c-8af3-86aed19346aa"
-        data-base-api-url="src="anythingllm-chat-widget.min.js"
+        data-base-api-url="https://frieda-isthmian-darci.ngrok-free.dev/api/embed"
         data-position="bottom-right" 
         data-window-height="600px" 
         data-window-width="400px"
@@ -17,7 +52,5 @@
         data-assistant-name="Assistant UniCA">
     </script>
 
-
-    
 </body>
 </html>
